@@ -8,7 +8,6 @@
 
 <h2 align="center">Daftar Isi</h2>
 
-<div align="center">
 
 1. [Deskripsi Singkat Program](#1-deskripsi-singkat-program)
 2. [Penjelasan Struktur Package](#2-penjelasan-struktur-package)
@@ -17,7 +16,6 @@
 5. [Penerapan Polymorphism dan Abstraction](#5-penerapan-polymorphism-dan-abstraction)
 6. [Letak Penerapan Nilai Tambah](#6-letak-penerapan-nilai-tambah)
 
-</div>
 
 <hr>
 
