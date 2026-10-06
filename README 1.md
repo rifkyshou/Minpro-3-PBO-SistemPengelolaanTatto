@@ -55,8 +55,10 @@ src/main/java
     └── InputValidator.java
 ```
 
+<p align="center"><i>Gambar 1. Struktur Package</i></p>
+
 | Package | Class | Peran |
-|---|---|---|
+|---|---|---| 
 | `model` | `Orang` | Abstract class induk (`nama`, `noHp`) dengan abstract method `getInfo()` |
 | `model` | `Pelanggan`, `TattooArtist` | Subclass dari `Orang` (menambah `alamat` / `spesialisasi`) |
 | `model` | `Booking` | Data booking, menyimpan objek `Pelanggan` dan `TattooArtist` |
@@ -75,7 +77,7 @@ src/main/java
   <img src="docs/alur-program.png" alt="Diagram alur program" width="700">
 </p>
 
-<p align="center"><i>Gambar 1. Diagram alur program</i></p>
+<p align="center"><i>Gambar 2. Diagram alur program</i></p>
 
 <div align="justify">
 
@@ -124,6 +126,7 @@ public void setHarga(double harga) {
     this.harga = harga;
 }
 ```
+<p align="center"><i>Gambar 3. Encapsulation</i></p>
 
 <p align="justify">
 Constructor juga memanggil setter, sehingga objek yang dibuat tidak mungkin berisi data yang tidak valid.
@@ -151,8 +154,7 @@ public abstract class Orang { ... }
 public class Pelanggan extends Orang { ... }     // + alamat
 public class TattooArtist extends Orang { ... }  // + spesialisasi
 ```
-
----
+<p align="center"><i>Gambar 4. Inheritance</i></p>
 
 ## 5. Penerapan Polymorphism dan Abstraction
 
@@ -167,6 +169,7 @@ public abstract class Orang {
     public abstract String getInfo();
 }
 ```
+<p align="center"><i>Gambar 5. Abstraction</i></p>
 
 ### 5.2 Polymorphism - Overriding
 
@@ -187,6 +190,7 @@ public String getInfo() {
     return "Nama: " + getNama() + " | Spesialisasi: " + spesialisasi;
 }
 ```
+<p align="center"><i>Gambar 6. Overriding</i></p>
 
 <p align="justify">
 <code>BookingView</code> memanggil method tersebut melalui reference bertipe <code>Orang</code>. Method yang dijalankan ditentukan oleh objek aslinya saat runtime.
@@ -198,6 +202,7 @@ Orang artist = b.getArtist();
 System.out.println(" Pelanggan  : " + pelanggan.getInfo());
 System.out.println(" Artist     : " + artist.getInfo());
 ```
+<p align="center"><i>Gambar 7. Overriding</i></p>
 
 ### 5.3 Polymorphism - Overloading
 
@@ -216,8 +221,7 @@ bacaString(String pesan, String contoh)
 bacaDouble(String pesan)
 bacaDouble(String pesan, String contoh)
 ```
-
----
+<p align="center"><i>Gambar 7. Overloading</i></p>
 
 ## 6. Letak Penerapan Nilai Tambah
 
