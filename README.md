@@ -66,7 +66,7 @@ Perbaikan dari revisi Mini Project 2 meliputi: setter diberi validasi, validasi 
 <code>Main</code> hanya memanggil <code>new BookingController().jalankan()</code>. Saat <code>BookingController</code> dibuat, <code>ArtistController</code> mengisi 3 artist (Rian Ink - Realis, Dewi Tattoo - Minimalis, Bima Tribal - Tribal) dan <code>seedData()</code> mengisi 2 booking, sehingga data langsung tampil tanpa input manual. Setelah itu menu ditampilkan berulang dengan <code>do-while</code> dan <code>switch</code> sampai pengguna memilih <code>0</code>. Berikut alur program beserta hasil outputnya.
 </p>
 
-<h3 align="center">3.1 Menu Utama</h3>
+<h3>3.1 Menu Utama</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/18cb82b3-22b4-45d5-8ea4-fecfa23887a7" alt="Menu utama" width="600">
@@ -77,7 +77,7 @@ Perbaikan dari revisi Mini Project 2 meliputi: setter diberi validasi, validasi 
 <code>BookingView</code> menampilkan menu 1-6 dan 0 (keluar). Pengguna memilih menu dengan memasukkan angka, yang dibaca oleh <code>InputValidator.bacaInt()</code>. Jika yang dimasukkan bukan angka atau bukan pilihan menu, program menampilkan pesan kesalahan lalu kembali ke menu.
 </p>
 
-<h3 align="center">3.2 Lihat Semua Booking (Menu 3)</h3>
+<h3>3.2 Lihat Semua Booking (Menu 3)</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1e99c455-a6c8-4035-960d-64b4a029ab74" alt="Lihat semua booking" width="600">
@@ -88,7 +88,7 @@ Perbaikan dari revisi Mini Project 2 meliputi: setter diberi validasi, validasi 
 Menampilkan seluruh booking beserta ID, info pelanggan, info artist, desain, harga, tanggal, dan status. Info pelanggan dan artist diambil dari method <code>getInfo()</code> masing-masing class (polymorphism). Saat pertama kali dijalankan, sudah ada 2 booking dari data awal. Jika tidak ada data, tampil pesan "(Belum ada data)".
 </p>
 
-<h3 align="center">3.3 Tambah Artist (Menu 1)</h3>
+<h3>3.3 Tambah Artist (Menu 1)</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/09f2348e-d0a1-41c6-8600-0bb128f2c027" alt="Tambah artist" width="600">
@@ -99,7 +99,7 @@ Menampilkan seluruh booking beserta ID, info pelanggan, info artist, desain, har
 Pengguna mengisi nama, no HP, dan spesialisasi artist. Artist disimpan di <code>ArtistController</code>, terpisah dari input booking, sehingga data artist tidak perlu diketik ulang setiap kali membuat booking.
 </p>
 
-<h3 align="center">3.4 Tambah Booking (Menu 2)</h3>
+<h3>3.4 Tambah Booking (Menu 2)</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7f13cfff-7c7a-4e1c-bdf8-af0fc6d07eb0" alt="Tambah booking" width="600">
@@ -115,7 +115,7 @@ Pengguna mengisi data pelanggan (nama, no HP, alamat), lalu program menampilkan 
 </p>
 <p align="center"><i>Gambar 6. Booking baru muncul di daftar booking</i></p>
 
-<h3 align="center">3.5 Validasi Input</h3>
+<h3>3.5 Validasi Input</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/61f2bb11-cae5-4f4a-a087-fb07b7833ad7" alt="Validasi input" width="600">
@@ -126,7 +126,7 @@ Pengguna mengisi data pelanggan (nama, no HP, alamat), lalu program menampilkan 
 Input dicek di <code>InputValidator</code> dan diulang sampai benar: nomor artist harus sesuai daftar, harga harus angka dan lebih dari 0 (tidak boleh minus), tanggal harus berformat <code>dd-mm-yyyy</code> dan nyata (misalnya <code>31-02-2026</code> ditolak), serta teks tidak boleh kosong. Data kemudian dicek lagi di setter model sebagai pengaman terakhir.
 </p>
 
-<h3 align="center">3.6 Update Booking (Menu 4)</h3>
+<h3>3.6 Update Booking (Menu 4)</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1090fad7-f339-4780-81e0-b2c6d48ce453" alt="Update booking" width="600">
@@ -137,7 +137,7 @@ Input dicek di <code>InputValidator</code> dan diulang sampai benar: nomor artis
 Program menampilkan daftar booking, pengguna memasukkan ID, lalu data saat ini ditampilkan. Field yang dapat diubah adalah nama desain, harga, dan tanggal. Setiap field menampilkan nilai lama di dalam tanda kurung siku, dan <b>menekan Enter mempertahankan nilai lama</b>. Jika ID tidak ditemukan, tampil pesan "ID tidak ditemukan.".
 </p>
 
-<h3 align="center">3.7 Ubah Status Booking (Menu 5)</h3>
+<h3>3.7 Ubah Status Booking (Menu 5)</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/43cf0a00-a12d-4b0a-8961-51753e6f7420" alt="Ubah status booking" width="600">
@@ -148,18 +148,18 @@ Program menampilkan daftar booking, pengguna memasukkan ID, lalu data saat ini d
 Pengguna memilih ID booking dari daftar, lalu mengisi status baru. Status hanya boleh <code>Menunggu</code>, <code>Dikerjakan</code>, atau <code>Selesai</code>, dan input diulang sampai sesuai.
 </p>
 
-<h3 align="center">3.8 Hapus Booking (Menu 6)</h3>
+<h3>3.8 Hapus Booking (Menu 6)</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/93c25dc8-b75b-44ab-960f-b3849865ca9a" alt="Hapus booking" width="600">
 </p>
-<p align="center"><i>Gambar 10. Hapus booking</i></p>
+<p><i>Gambar 10. Hapus booking</i></p>
 
 <p align="justify">
 Pengguna memilih ID booking dari daftar yang ditampilkan, lalu booking tersebut dihapus oleh method <code>hapus()</code> dari interface <code>Crud</code>.
 </p>
 
-<h3 align="center">3.9 Keluar (Menu 0)</h3>
+<h3>3.9 Keluar (Menu 0)</h3>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/78f98bd7-c3ee-4202-a52c-b57151997886" alt="Keluar dari program" width="600">
@@ -174,7 +174,7 @@ Program menampilkan "Terima kasih, program selesai." dan perulangan menu berhent
 
 <h2 align="center">4. Penerapan Encapsulation dan Inheritance</h2>
 
-<h3 align="center">4.1 Encapsulation</h3>
+<h3>4.1 Encapsulation</h3>
 
 <p align="justify">
 Semua atribut di <code>Orang</code>, <code>Pelanggan</code>, <code>TattooArtist</code>, dan <code>Booking</code> bersifat <code>private</code> dan hanya diakses melalui getter dan setter. Setiap setter memanggil method validasi di <code>InputValidator</code>, dan nilai baru hanya disimpan jika lolos validasi.
@@ -222,7 +222,7 @@ Constructor juga memanggil setter, sehingga data yang masuk ke objek selalu mele
 
 </div>
 
-<h3 align="center">4.2 Inheritance</h3>
+<h3>4.2 Inheritance</h3>
 
 <p align="justify">
 <code>Orang</code> adalah superclass, dengan dua subclass yaitu <code>Pelanggan</code> dan <code>TattooArtist</code>. Kedua subclass mewarisi <code>nama</code>, <code>noHp</code>, beserta getter dan setter-nya dari <code>Orang</code>, lalu memanggil <code>super(nama, noHp)</code> pada constructor.
@@ -243,7 +243,7 @@ Constructor juga memanggil setter, sehingga data yang masuk ke objek selalu mele
 
 <h2 align="center">5. Penerapan Polymorphism dan Abstraction</h2>
 
-<h3 align="center">5.1 Abstraction</h3>
+<h3>5.1 Abstraction</h3>
 
 <p align="justify">
 <code>Orang</code> adalah <b>abstract class</b> dengan <b>abstract method</b> <code>getInfo()</code> (<code>model/Orang.java</code>). Class ini tidak dapat dibuat objeknya secara langsung, dan setiap subclass wajib mengimplementasikan <code>getInfo()</code>.
@@ -254,7 +254,7 @@ Constructor juga memanggil setter, sehingga data yang masuk ke objek selalu mele
 </p>
 <p align="center"><i>Gambar 14. Abstraction</i></p>
 
-<h3 align="center">5.2 Polymorphism - Overriding</h3>
+<h3>5.2 Polymorphism - Overriding</h3>
 
 <p align="justify">
 <code>Pelanggan</code> dan <code>TattooArtist</code> meng-override <code>getInfo()</code> dengan isi yang berbeda.
@@ -277,7 +277,7 @@ Constructor juga memanggil setter, sehingga data yang masuk ke objek selalu mele
 </p>
 <p align="center"><i>Gambar 16. Pemanggilan method hasil overriding</i></p>
 
-<h3 align="center">5.3 Polymorphism - Overloading</h3>
+<h3>5.3 Polymorphism - Overloading</h3>
 
 <p align="justify">
 <code>util/InputValidator.java</code> memiliki beberapa method dengan nama sama tetapi parameter berbeda.
@@ -298,7 +298,7 @@ Constructor juga memanggil setter, sehingga data yang masuk ke objek selalu mele
 
 <h2 align="center">6. Letak Penerapan Nilai Tambah</h2>
 
-<h3 align="center">Interface</h3>
+<h3>Interface</h3>
 
 <p align="justify">
 Interface <code>Crud</code> berada di <code>interfaces/Crud.java</code> dan berisi kontrak operasi data booking.
