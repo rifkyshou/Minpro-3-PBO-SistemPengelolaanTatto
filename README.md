@@ -35,26 +35,8 @@ Perbaikan dari revisi Mini Project 2 meliputi: setter diberi validasi, validasi 
 
 ## 2. Penjelasan Struktur Package
 
-```
-src/main/java
-├── main
-│   └── Main.java
-├── model
-│   ├── Orang.java            (abstract class)
-│   ├── Pelanggan.java
-│   ├── TattooArtist.java
-│   └── Booking.java
-├── view
-│   └── BookingView.java
-├── controller
-│   ├── BookingController.java
-│   └── ArtistController.java
-├── interfaces
-│   └── Crud.java             (interface)
-└── util
-    └── InputValidator.java
-```
-
+<p align="center">
+<img width="357" height="411" alt="image" src="https://github.com/user-attachments/assets/e3e216eb-e78f-4a34-a5df-58c4defdff2c" />
 <p align="center"><i>Gambar 1. Struktur Package</i></p>
 
 | Package | Class | Peran |
@@ -80,7 +62,7 @@ src/main/java
 ### 3.1 Menu Utama
 
 <p align="center">
-  <img src="docs/output-01-menu-utama.png" alt="Menu utama" width="650">
+  <img width="735" height="272" alt="image" src="https://github.com/user-attachments/assets/18cb82b3-22b4-45d5-8ea4-fecfa23887a7" />
 </p>
 <p align="center"><i>Gambar 2. Menu utama</i></p>
 
@@ -91,7 +73,7 @@ src/main/java
 ### 3.2 Lihat Semua Booking (Menu 3)
 
 <p align="center">
-  <img src="docs/output-02-lihat-booking.png" alt="Lihat semua booking" width="650">
+  <img width="741" height="423" alt="image" src="https://github.com/user-attachments/assets/1e99c455-a6c8-4035-960d-64b4a029ab74" />
 </p>
 <p align="center"><i>Gambar 3. Lihat semua booking (data awal)</i></p>
 
@@ -102,7 +84,7 @@ Menampilkan seluruh booking beserta ID, info pelanggan, info artist, desain, har
 ### 3.3 Tambah Artist (Menu 1)
 
 <p align="center">
-  <img src="docs/output-03-tambah-artist.png" alt="Tambah artist" width="650">
+  <img width="732" height="182" alt="image" src="https://github.com/user-attachments/assets/09f2348e-d0a1-41c6-8600-0bb128f2c027" />
 </p>
 <p align="center"><i>Gambar 4. Tambah artist</i></p>
 
@@ -113,7 +95,7 @@ Pengguna mengisi nama, no HP, dan spesialisasi artist. Artist disimpan di <code>
 ### 3.4 Tambah Booking (Menu 2)
 
 <p align="center">
-  <img src="docs/output-04-tambah-booking.png" alt="Tambah booking" width="650">
+  <img width="732" height="455" alt="image" src="https://github.com/user-attachments/assets/7f13cfff-7c7a-4e1c-bdf8-af0fc6d07eb0" />
 </p>
 <p align="center"><i>Gambar 5. Tambah booking dengan memilih artist dari daftar</i></p>
 
@@ -122,14 +104,14 @@ Pengguna mengisi data pelanggan (nama, no HP, alamat), lalu program menampilkan 
 </p>
 
 <p align="center">
-  <img src="docs/output-05-hasil-tambah.png" alt="Hasil tambah booking" width="650">
+  <img width="732" height="602" alt="image" src="https://github.com/user-attachments/assets/0de7bbde-6d04-4851-b47a-c3ccca3a41b2" />
 </p>
 <p align="center"><i>Gambar 6. Booking baru muncul di daftar booking</i></p>
 
 ### 3.5 Validasi Input
 
 <p align="center">
-  <img src="docs/output-06-validasi.png" alt="Validasi input" width="650">
+  <img width="747" height="387" alt="image" src="https://github.com/user-attachments/assets/61f2bb11-cae5-4f4a-a087-fb07b7833ad7" />
 </p>
 <p align="center"><i>Gambar 7. Validasi input</i></p>
 
@@ -140,7 +122,7 @@ Input dicek di <code>InputValidator</code> dan diulang sampai benar: nomor artis
 ### 3.6 Update Booking (Menu 4)
 
 <p align="center">
-  <img src="docs/output-07-update.png" alt="Update booking" width="650">
+  <img width="727" height="347" alt="image" src="https://github.com/user-attachments/assets/1090fad7-f339-4780-81e0-b2c6d48ce453" />
 </p>
 <p align="center"><i>Gambar 8. Update booking, Enter mempertahankan data lama</i></p>
 
@@ -151,7 +133,7 @@ Program menampilkan daftar booking, pengguna memasukkan ID, lalu data saat ini d
 ### 3.7 Ubah Status Booking (Menu 5)
 
 <p align="center">
-  <img src="docs/output-08-ubah-status.png" alt="Ubah status booking" width="650">
+  <img width="721" height="675" alt="image" src="https://github.com/user-attachments/assets/43cf0a00-a12d-4b0a-8961-51753e6f7420" />
 </p>
 <p align="center"><i>Gambar 9. Ubah status booking</i></p>
 
@@ -162,7 +144,7 @@ Pengguna memilih ID booking dari daftar, lalu mengisi status baru. Status hanya 
 ### 3.8 Hapus Booking (Menu 6)
 
 <p align="center">
-  <img src="docs/output-09-hapus.png" alt="Hapus booking" width="650">
+  <img width="737" height="655" alt="image" src="https://github.com/user-attachments/assets/93c25dc8-b75b-44ab-960f-b3849865ca9a" />
 </p>
 <p align="center"><i>Gambar 10. Hapus booking</i></p>
 
@@ -173,7 +155,7 @@ Pengguna memilih ID booking dari daftar yang ditampilkan, lalu booking tersebut 
 ### 3.9 Keluar (Menu 0)
 
 <p align="center">
-  <img src="docs/output-10-keluar.png" alt="Keluar" width="650">
+  <img width="733" height="415" alt="image" src="https://github.com/user-attachments/assets/78f98bd7-c3ee-4202-a52c-b57151997886" />
 </p>
 <p align="center"><i>Gambar 11. Keluar dari program</i></p>
 
@@ -206,13 +188,9 @@ Semua atribut di <code>Orang</code>, <code>Pelanggan</code>, <code>TattooArtist<
 Contoh penerapan pada <code>model/Booking.java</code>:
 </p>
 
-```java
-public void setHarga(double harga) {
-    if (InputValidator.isHargaValid(harga)) {
-        this.harga = harga;
-    }
-}
-```
+<p align="center">
+  <img width="511" height="468" alt="image" src="https://github.com/user-attachments/assets/2836f56a-b561-4fc6-a63d-6011e3a508dc" />
+</p>
 <p align="center"><i>Gambar 12. Encapsulation</i></p>
 
 <p align="justify">
@@ -236,11 +214,12 @@ Constructor juga memanggil setter, sehingga data yang masuk ke objek selalu mele
 <code>Orang</code> adalah superclass, dengan dua subclass yaitu <code>Pelanggan</code> dan <code>TattooArtist</code>. Kedua subclass mewarisi <code>nama</code>, <code>noHp</code>, beserta getter dan setter-nya dari <code>Orang</code>, lalu memanggil <code>super(nama, noHp)</code> pada constructor.
 </p>
 
-```java
-public abstract class Orang { ... }
-public class Pelanggan extends Orang { ... }     // + alamat
-public class TattooArtist extends Orang { ... }  // + spesialisasi
-```
+<p align="center">
+<img width="302" height="21" alt="image" src="https://github.com/user-attachments/assets/ff882bd7-1dcd-4b8c-926b-d31248ad8b82" />
+<img width="392" height="21" alt="image" src="https://github.com/user-attachments/assets/104fcfc8-a90d-4c13-aacf-c03b7305a288" />
+<img width="416" height="22" alt="image" src="https://github.com/user-attachments/assets/c969d74a-ec73-49a4-8195-69a39043d75a" />
+</p>
+
 <p align="center"><i>Gambar 13. Inheritance</i></p>
 
 ## 5. Penerapan Polymorphism dan Abstraction
@@ -251,11 +230,9 @@ public class TattooArtist extends Orang { ... }  // + spesialisasi
 <code>Orang</code> adalah <b>abstract class</b> dengan <b>abstract method</b> <code>getInfo()</code> (<code>model/Orang.java</code>). Class ini tidak dapat dibuat objeknya secara langsung, dan setiap subclass wajib mengimplementasikan <code>getInfo()</code>.
 </p>
 
-```java
-public abstract class Orang {
-    public abstract String getInfo();
-}
-```
+<p align="center">
+<img width="513" height="586" alt="image" src="https://github.com/user-attachments/assets/7abda4b4-8eff-4524-b269-bad9a9160bc1" />
+</p>
 <p align="center"><i>Gambar 14. Abstraction</i></p>
 
 ### 5.2 Polymorphism - Overriding
@@ -264,31 +241,20 @@ public abstract class Orang {
 <code>Pelanggan</code> dan <code>TattooArtist</code> meng-override <code>getInfo()</code> dengan isi yang berbeda.
 </p>
 
-```java
-// Pelanggan.java
-@Override
-public String getInfo() {
-    return "Nama: " + getNama() + " | HP: " + getNoHp() + " | Alamat: " + alamat;
-}
-
-// TattooArtist.java
-@Override
-public String getInfo() {
-    return "Nama: " + getNama() + " | Spesialisasi: " + spesialisasi;
-}
-```
+<p align="center">
+<img width="817" height="67" alt="image" src="https://github.com/user-attachments/assets/0f30eeea-0ee0-45f9-a7e1-525e8ad63fc4" />
+<img width="705" height="65" alt="image" src="https://github.com/user-attachments/assets/aecec4ab-dcad-48f5-9b5b-ec01c8e40e5f" />
+</p>
 <p align="center"><i>Gambar 15. Overriding</i></p>
 
 <p align="justify">
 <code>BookingView</code> memanggil method tersebut melalui reference bertipe <code>Orang</code>. Method yang dijalankan ditentukan oleh objek aslinya saat runtime.
 </p>
 
-```java
-Orang pelanggan = b.getPelanggan();
-Orang artist = b.getArtist();
-System.out.println(" Pelanggan  : " + pelanggan.getInfo());
-System.out.println(" Artist     : " + artist.getInfo());
-```
+<p align="center">
+<img width="677" height="248" alt="image" src="https://github.com/user-attachments/assets/8dfaefb8-3df8-4eaa-8ee5-dda763409a96" />
+</p>
+
 <p align="center"><i>Gambar 16. Pemanggilan method hasil overriding</i></p>
 
 ### 5.3 Polymorphism - Overloading
@@ -297,17 +263,12 @@ System.out.println(" Artist     : " + artist.getInfo());
 <code>util/InputValidator.java</code> memiliki beberapa method dengan nama sama tetapi parameter berbeda.
 </p>
 
-```java
-bacaInt(String pesan)
-bacaInt(String pesan, String contoh)
-bacaInt(String pesan, int min, int max)   // dipakai saat memilih nomor artist
+<p align="center">
+<img width="692" height="248" alt="image" src="https://github.com/user-attachments/assets/d7679702-4d4b-4e2e-9db0-2768bf418367" />
+<img width="696" height="278" alt="image" src="https://github.com/user-attachments/assets/e44ba0dc-9ad0-4fa1-878b-aa2fde2a7a90" />
+<img width="692" height="272" alt="image" src="https://github.com/user-attachments/assets/1caf4fd3-66e4-4c07-a2c6-d110005c309c" />
+</p>
 
-bacaString(String pesan)
-bacaString(String pesan, String contoh)
-
-bacaDouble(String pesan)
-bacaDouble(String pesan, String contoh)
-```
 <p align="center"><i>Gambar 17. Overloading</i></p>
 
 ## 6. Letak Penerapan Nilai Tambah
@@ -318,24 +279,19 @@ bacaDouble(String pesan, String contoh)
 Interface <code>Crud</code> berada di <code>interfaces/Crud.java</code> dan berisi kontrak operasi data booking.
 </p>
 
-```java
-public interface Crud {
-    ArrayList<Booking> getAll();
-    Booking cariById(int id);
-    boolean hapus(int id);
-}
-```
+<p align="center">
+<img width="342" height="87" alt="image" src="https://github.com/user-attachments/assets/e7a2d558-eb55-4785-bd2b-dffd5a8b300b" />
+</p>
 <p align="center"><i>Gambar 18. Interface</i></p>
 
 <p align="justify">
 Interface ini diimplementasikan oleh <code>BookingController</code> (<code>controller/BookingController.java</code>) dengan menggunakan <code>@Override</code> pada ketiga method tersebut.
 </p>
 
-```java
-public class BookingController implements Crud {
-    @Override public ArrayList<Booking> getAll() { ... }
-    @Override public Booking cariById(int id) { ... }
-    @Override public boolean hapus(int id) { ... }
-}
-```
+<p align="center">
+<img width="501" height="28" alt="image" src="https://github.com/user-attachments/assets/7fd640a9-51c0-4dea-a767-4be0b6103845" />
+<img width="380" height="90" alt="image" src="https://github.com/user-attachments/assets/239715ca-486d-4619-ac8d-c0529d40a33c" />
+<img width="392" height="160" alt="image" src="https://github.com/user-attachments/assets/4b34a611-35f8-4a8c-a515-640a3f134d2d" />
+<img width="327" height="160" alt="image" src="https://github.com/user-attachments/assets/b9029b48-8f6e-468e-962c-68a9e1453cf9" />
+</p>
 <p align="center"><i>Gambar 19. Implementasi interface</i></p>
