@@ -153,7 +153,7 @@ Pengguna memilih ID booking dari daftar, lalu mengisi status baru. Status hanya 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/93c25dc8-b75b-44ab-960f-b3849865ca9a" alt="Hapus booking" width="600">
 </p>
-<p><i>Gambar 10. Hapus booking</i></p>
+<p align="center"><i>Gambar 10. Hapus booking</i></p>
 
 <p align="justify">
 Pengguna memilih ID booking dari daftar yang ditampilkan, lalu booking tersebut dihapus oleh method <code>hapus()</code> dari interface <code>Crud</code>.
